@@ -1,0 +1,40 @@
+.header {
+  color: #222;
+  margin: 0.5em;
+}
+
+.center {
+  display: flex;
+}
+
+.screen {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.main {
+  background: rgba(255, 255, 255, 0);
+  padding-top: 0em;
+}
+
+.components {
+  background: rgba(50.2, 0, 12.5, 0.9);
+  background-size: cover;
+  width: 100%;
+  color: white;
+  padding: 0em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.map {
+  padding: 0em;
+  background: rgba(50.2, 0, 12.5, 0);
+}
+
+.filters { 
+  margin-right: 1em;
+  margin-left: 1em;
+  background: rgba(50.2, 0, 12.5, 0.9);
+  float: right !important;
+}

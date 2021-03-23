@@ -1,0 +1,42 @@
+.list-overflow-container {
+  max-height: 545px;
+  border: 1px #DDDDDD solid;
+  border-radius: 3px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background: rgba(255, 255, 255, 0);
+}
+
+.list-overflow-container ul {
+  margin: 0;
+  background: rgba(255, 255, 255, 0);
+}
+
+.list-overflow-container li {
+  border-radius: 3px;
+  border: 1px #DDDDDD solid;
+  /* border-left: none;
+  border-right: none; */
+  background: rgba(50.2, 0, 12.5, 0.8);
+}
+
+.list-overflow-container li * {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0);
+}
+
+.list-overflow-container li a {
+  color: white;
+  background: rgba(255, 255, 255, 0);
+
+}
+
+.list-overflow-container li:first-child {
+  border-top: none;
+  background: rgba(255, 255, 255, 0);
+}
+
+.list-overflow-container li:last-child {
+  border-bottom: none;
+  background: rgba(255, 255, 255, 0);
+}

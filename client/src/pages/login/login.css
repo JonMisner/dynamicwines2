@@ -1,0 +1,22 @@
+.header {
+  color: #222;
+  margin: 0.5em;
+}
+
+.center {
+  display: flex;
+}
+
+.screen {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.main {
+  background: rgba(255, 255, 255, 0);
+  padding-top: 0em;
+}
+
+.login {
+  margin: 4em;
+}

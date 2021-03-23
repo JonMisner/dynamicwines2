@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.0.0/journal/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../Assets/css/styles.css" />
+    <title>Dynamic Wine</title>
+  </head>
+
+  <body>
+    <noscript> You need to enable JavaScript to run this app. </noscript>
+    <div>
+      <!--- NAV BAR HEADER -->
+      <div class="burgBG d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3"
+      >
+        <h5 class="my-0 mr-md-auto text-dark font-weight-normal siteLogo">
+          <a href="/"><img src="../Assets/img/dynamicWineLogo.png" /></a>
+        </h5>
+        <a class="btn btn-outline-dark text-dark" href="/login">Login</a>
+      </div>
+
+      <!--- SITE CONTENT (COMING FROM REACTJS) -->
+      <div id="root" class="container-fluid"></div>
+
+      <!-- Site footer -->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6>About</h6> 
+              <p class="text-justify">
+                Welcome to Dynamic Wine, the app that allows restaurants to select the perfect bottles for their unique winelist.
+              </p>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+              <h6>Information</h6>
+              <ul class="footer-links">
+                <li>
+                  <a href="https://github.com/carolinetwyman/dynamicwine">Project Github</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+                <li><a href="/">Home</a></li>
+                <!-- <li><a href="/suggest">Suggest a Wine</a></li> -->
+                <li><a href="/login">Login</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">
+                Copyright &copy; 2020 All Rights Reserved by
+                <a href="#">Dynamic Wines</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
