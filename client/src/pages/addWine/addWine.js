@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 // import Map from "../../components/map/map";
 import Filters from "../../components/filters/filters";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Jumbotron, Row, Col } from "reactstrap";
+import { Jumbotron, Row, Col, Form, Label } from "reactstrap";
 import API from "../../utils/API";
 import axios from "axios";
 import { List, ListItem } from "../../components/List";
@@ -90,83 +90,109 @@ export default function AddWine() {
         <Row>
           <Col lg={8}>
             <Jumbotron fluid className="addWine"> 
-            <form>
+            <Form>
+            <Col className="formCol">
+              <Label className="labelColorChange">Winemaker</Label>
               <Input
                 onChange={handleInputChange}
                 name="wine_name"
                 placeholder="Producer Name"
               />
+              <Label className="labelColorChange">Label Name</Label>
               <Input
                 onChange={handleInputChange}
                 name="full_name"
                 placeholder="Vineyard or label name"
               />
+              <Label className="labelColorChange">Vintage</Label>
               <Input
                 onChange={handleInputChange}
                 name="year"
                 placeholder="Vintage"
               />
+              <Label>Color of Wine</Label>
                <Input
                 onChange={handleInputChange}
                 name="color"
                 placeholder="Red, White, or Rose?"
               />
+              <Label>Carbonation</Label>
               <Input
+                className="inputColorChange"
                 onChange={handleInputChange}
                 name="carbonation"
                 placeholder="Still or Sparkling?"
               />
+              <Label>Vatietal on Label</Label>
               <Input
+               className="inputColorChange"
                 onChange={handleInputChange}
                 name="grape"
                 placeholder="Varietal or style of blend"
               />
+              <Label>All Varietals Included</Label>
               <Input
+               className="inputColorChange"
                 onChange={handleInputChange}
                 name="grape_detail"
                 placeholder="List of Varietals"
               />
+              </Col>
+              <Col className="formCol">
+              <Label className="labelColorChange">Country</Label>
               <Input
                 onChange={handleInputChange}
                 name="country"
                 placeholder="Country"
               />
+              <Label className="labelColorChange">Region</Label>
               <Input
                 onChange={handleInputChange}
                 name="region"
                 placeholder="Region"
               />
+              <Label>Address</Label>
               <Input
                 onChange={handleInputChange}
                 name="address"
-                placeholder="Address for map"
+                placeholder="Address of Winery or Vineyard"
               />
+              <Label>Glass Pour?</Label>
+                <Input
+                 className="inputColorChange"
+                onChange={handleInputChange}
+                name="size"
+                placeholder='"Glass" or "Bottle"'
+              />
+              <Label>Price Per Bottle</Label>
               <Input
+               className="inputColorChange"
                 onChange={handleInputChange}
                 name="PPB"
                 placeholder="Price per bottle"
               />
+              <Label>Price Per Glass</Label>
               <Input
+               className="inputColorChange"
                 onChange={handleInputChange}
                 name="PPG"
                 placeholder="Price per glass (if available)"
               />
+              <Label>Tasting Notes</Label>
               <Input
-                onChange={handleInputChange}
-                name="size"
-                placeholder="Glass or Bottle?"
-              />
-              <Input
+               className="inputColorChange"
                 onChange={handleInputChange}
                 name="details"
                 placeholder="Enter tasting notes here"
               />
+               
               <button
-						className="btn btn-primary col-1 col-mr-auto"
+						className="btn"
 						onClick={handleFormSubmit}
 						type="submit"
-					>Submit Wine</button>
-            </form>
+					>Add Wine</button>
+            </Col>
+            </Form>
             </Jumbotron>
           </Col>
           <Col lg={4}>
