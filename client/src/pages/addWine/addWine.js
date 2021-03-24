@@ -32,6 +32,11 @@ export default function AddWine() {
       })
       .catch((err) => console.log(err));
   }
+  function deleteWine(id) {
+    API.deleteWine(id)
+      .then(res => loadWines())
+      .catch((err) => console.log(err));
+  }
 
   function handleInputChange(event) {
     const { name, value } = event.target;
@@ -73,6 +78,21 @@ export default function AddWine() {
         .catch((err) => console.log(err));
     }
   }
+
+  // function handleFormDelete(event) {
+  //   event.preventDefault();
+  //   if (formObject.wine_name && formObject.year) {
+  //     API.deleteWine()
+  //       .then(() =>
+  //         setFormObject({
+  //           wine_name: "",
+  //           year: "",
+  //         })
+  //       )
+  //       .then(() => delWines())
+  //       .catch((err) => console.log(err));
+  //   }
+  // }
 
   return (
     <div className="body">
@@ -207,9 +227,13 @@ export default function AddWine() {
                           </div>
                         </Col>
                         <Col lg={2}>
-                          <DeleteWineEntry className="delete" wine={wine}>
-                            {" "}
-                          </DeleteWineEntry>
+                        <button
+                            className="btn"
+                            onClick={()=> deleteWine(wine._id)}
+                            type="submit"
+                          >
+                              Delete
+                          </button>
                         </Col>
                         <Col lg={2}>
                           <Info className="info" wine={wine}>
