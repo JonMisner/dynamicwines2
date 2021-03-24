@@ -7,8 +7,10 @@ import API from "../../utils/API";
 import axios from "axios";
 import { List, ListItem } from "../../components/List";
 import Info from "../../components/information/information";
+import Delete from "../../components/delete/delete";
 import "./addWine.css";
 import { Input } from "../../components/Form";
+import DeleteWineEntry from "../../components/delete/delete";
 // import { Link } from "react-router-dom";
 
 export default function AddWine() {
@@ -196,7 +198,7 @@ export default function AddWine() {
                   {wines.map((wine) => (
                     <ListItem key={wine._id} wine={wine}>
                       <Row>
-                        <Col lg={10}>
+                        <Col lg={8}>
                           <strong wine={wine}>
                             {wine.wine_name} "{wine.full_name}"
                           </strong>
@@ -205,10 +207,16 @@ export default function AddWine() {
                           </div>
                         </Col>
                         <Col lg={2}>
+                          <DeleteWineEntry className="delete" wine={wine}>
+                            {" "}
+                          </DeleteWineEntry>
+                        </Col>
+                        <Col lg={2}>
                           <Info className="info" wine={wine}>
                             {" "}
                           </Info>
-                        </Col>
+                          
+                        </Col>                        
                       </Row>
                     </ListItem>
                   ))}
