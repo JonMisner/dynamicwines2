@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Filters from "../../components/filters/filters";
+// import Filters from "../../components/filters/filters";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Modal, ModalHeader, ModalBody } from "reactstrap";
 import "./delete.css";
