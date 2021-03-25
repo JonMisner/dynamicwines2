@@ -1,16 +1,26 @@
 body{background: #fff url('../img/wine-cellarBG.jpg') bottom center no-repeat;}
 
+
+
 #root {min-height:800px;}
 
 .siteLogo img {
   height:100px;
   margin-bottom: -1em;
 }
+
 .siteLogo a {color:#30010C;font-size:28px;}
-.siteLogo a:hover {color:#30010C;text-decoration:none;}
+.siteLogo a:hover {color:#40010C;text-decoration:none;}
 
 .headerSearch {
   width: 350px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .siteLogo img {
+    height: 100px;
+    margin-bottom: 0px;
+  }
 }
 
 /* FOOTER STYLES FROM https://codepen.io/scanfcode/pen/MEZPNd */
