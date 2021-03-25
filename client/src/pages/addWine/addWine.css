@@ -3,12 +3,10 @@ Form {
 }
 
 Label {
-  /* color: rgba(50.2, 0, 12.5); */
+  
   font-weight: bolder;
   color: #ffffff;
   text-shadow: 2px 2px rgba(50.2, 0, 12.5,1);
-  /* background-color: rgba(50.2, 0, 12.5,1); */
-  /* margin-left: .5em; */
 
 }
 
@@ -30,10 +28,7 @@ Input {
 }
 
 .addWine {
-  /* background-image: url(./champagne.webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
+
   background-color: rgba(250,242,197,0);
   padding-top: .5em;
   padding-bottom: .5em;
@@ -66,7 +61,7 @@ Input {
   padding: 0em;
   margin-left: 0.5em;
   margin-right: 0.5em;
-  /* height: 10em; */
+
 }
 
 .map {
@@ -81,9 +76,7 @@ Input {
   float: right !important;
 }
 
-/* .inputColorChange ::placeholder {
- color: white !important;
-} */
+
 
 .labelColorChange {
   color: rgba(50.2, 0, 12.5,1);

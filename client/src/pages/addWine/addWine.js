@@ -1,17 +1,16 @@
 import React, { useState, useEffect } from "react";
-// import Map from "../../components/map/map";
+
 import Filters from "../../components/filters/filters";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Jumbotron, Row, Col, Form, Label } from "reactstrap";
 import API from "../../utils/API";
-import axios from "axios";
+// import axios from "axios";
 import { List, ListItem } from "../../components/List";
 import Info from "../../components/information/information";
-import Delete from "../../components/delete/delete";
+
 import "./addWine.css";
 import { Input } from "../../components/Form";
-import DeleteWineEntry from "../../components/delete/delete";
-// import { Link } from "react-router-dom";
+
 
 export default function AddWine() {
   const [wines, setWines] = useState([]);
@@ -43,11 +42,6 @@ export default function AddWine() {
     setFormObject({ ...formObject, [name]: value });
   }
 
-  // function handleInputChange(event) {
-  //   const { name, value } = event.target;
-  //   setFormObject({ ...formObject, [name]: value });
-  // }
-
   function handleFormSubmit(event) {
     event.preventDefault();
     if (formObject.wine_name && formObject.year) {
@@ -72,27 +66,24 @@ export default function AddWine() {
           setFormObject({
             wine_name: "",
             year: "",
+            carbonation: "",
+            color: "",
+            grape: "",
+            grape_detail: "",
+            full_name: "",
+            country: "",
+            region: "",
+            address: "",
+            PPB: "",
+            size: "",
+            PPG: "",
+            details: "",
           })
         )
         .then(() => loadWines())
         .catch((err) => console.log(err));
     }
   }
-
-  // function handleFormDelete(event) {
-  //   event.preventDefault();
-  //   if (formObject.wine_name && formObject.year) {
-  //     API.deleteWine()
-  //       .then(() =>
-  //         setFormObject({
-  //           wine_name: "",
-  //           year: "",
-  //         })
-  //       )
-  //       .then(() => delWines())
-  //       .catch((err) => console.log(err));
-  //   }
-  // }
 
   return (
     <div className="body">
