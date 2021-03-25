@@ -1,33 +1,33 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+// import axios from "axios";
 import Map from "../../components/map/map";
 import Filters from "../../components/filters/filters";
 // import List from "../../components/list/list";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Jumbotron, Row, Col } from "reactstrap";
 import "../frontPage/frontPage.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import API from "../../utils/API";
 import { List, ListItem } from "../../components/List";
 import { Input } from "../../components/Form";
 import Info from "../../components/information/information";
 
 export default function Suggest() {
-  const [wineList, setWineList] = useState([
-    {
-      name: "Menti",
-      vintage: 2018,
-      address:
-        "UFFICI /HEADQUARTER, via Dr. Bruzzo, 24, 36053 Gambellara VI, Italy",
-    },
-    {
-      name: "Raventos i Blanc",
-      vintage: 2017,
-      address:
-        "Plaça del Roure, S/N, 08770 Sant Sadurní d'Anoia, Barcelona, Spain",
-      // coords: { lat: 41.4263208, lng: 1.7845831 }
-    },
-  ]);
+  // const [wineList, setWineList] = useState([
+  //   {
+  //     name: "Menti",
+  //     vintage: 2018,
+  //     address:
+  //       "UFFICI /HEADQUARTER, via Dr. Bruzzo, 24, 36053 Gambellara VI, Italy",
+  //   },
+  //   {
+  //     name: "Raventos i Blanc",
+  //     vintage: 2017,
+  //     address:
+  //       "Plaça del Roure, S/N, 08770 Sant Sadurní d'Anoia, Barcelona, Spain",
+  //     // coords: { lat: 41.4263208, lng: 1.7845831 }
+  //   },
+  // ]);
 
   const [wines, setWines] = useState([]);
   const [formObject, setFormObject] = useState({});

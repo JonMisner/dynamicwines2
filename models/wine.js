@@ -13,12 +13,18 @@ const WineSchema = new Schema({
     trim: true,
   },
 
+
+
+
+
+
+
   color: {
     type: String,
     trim: true,
   },
 
-  variety: {
+  carbonation: {
     type: String,
     trim: true,
   },
@@ -47,6 +53,16 @@ region: {
     type: String,
     trim: true,
   },
+
+  address: {
+    type: String,
+    trim: true,
+  },
+
+  size: {
+    type: String,
+    trim: true,
+  },  
 
 PPB: {
     type: String,

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from 'axios';
-import { BrowserRouter as Router, Route, Link} from "react-router-dom";
+import {Route} from "react-router-dom";
 import FrontPage from "./pages/frontPage/frontPage.js";
 //our LogIn is Thomas's LoginForm...
 import Signup from './components/sign-up';
