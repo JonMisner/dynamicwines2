@@ -28,6 +28,12 @@ export default function FrontPage() {
       .catch((err) => console.log(err));
   }
 
+  function deleteWine(id) {
+    API.deleteWine(id)
+      .then(res => loadWines())
+      .catch((err) => console.log(err));
+  }
+
   // function handleInputChange(event) {
   //   const { name, value } = event.target;
   //   setFormObject({ ...formObject, [name]: value });
@@ -78,7 +84,7 @@ export default function FrontPage() {
                   {wines.map((wine) => (
                     <ListItem key={wine._id} wine={wine}>
                     <Row>
-                      <Col lg={10}>
+                      <Col lg={8}>
                       <strong wine={wine}>
                         {wine.wine_name} "{wine.full_name}"
                       </strong>
@@ -86,6 +92,15 @@ export default function FrontPage() {
                         {wine.year} {wine.grape} {wine.PPG} | {wine.PPB}
                       </div>
                       </Col>
+                      <Col lg={2}>
+                        <button
+                            className="btn"
+                            onClick={()=> deleteWine(wine._id)}
+                            type="submit"
+                          >
+                              Delete
+                          </button>
+                        </Col>
                       <Col lg={2}>
                       <Info className="info" wine={wine}> </Info>
                       </Col>
