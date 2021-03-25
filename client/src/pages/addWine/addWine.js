@@ -122,25 +122,25 @@ export default function AddWine() {
                     name="year"
                     placeholder='Year Produced or "NV" for Non Vintage'
                   />
-                  <Label>Color of Wine</Label>
+                  <Label className="labelSmall">Color of Wine</Label>
                   <Input
                     onChange={handleInputChange}
                     name="color"
                     placeholder="Red, White, or Rose?"
                   />
-                  <Label>Carbonation</Label>
+                  <Label className="labelSmall">Carbonation</Label>
                   <Input
                     onChange={handleInputChange}
                     name="carbonation"
                     placeholder="Still or Sparkling?"
                   />
-                  <Label>Vatietal on Label</Label>
+                  <Label className="labelSmall">Varietal on Label</Label>
                   <Input
                     onChange={handleInputChange}
                     name="grape"
                     placeholder='e.g. "Cabernet" or "Rhone Blend"'
                   />
-                  <Label>All Varietals Included</Label>
+                  <Label className="labelSmall">All Varietals Included</Label>
                   <Input
                     onChange={handleInputChange}
                     name="grape_detail"
@@ -160,31 +160,31 @@ export default function AddWine() {
                     name="region"
                     placeholder="e.g. Napa Valley"
                   />
-                  <Label>Address</Label>
+                  <Label className="labelSmall">Address</Label>
                   <Input
                     onChange={handleInputChange}
                     name= "address"
                     placeholder="Full Address of Winery or Vineyard"
                   />
-                  <Label>Glass Pour?</Label>
+                  <Label className="labelSmall">Glass Pour?</Label>
                   <Input
                     onChange={handleInputChange}
                     name="size"
                     placeholder='"Glass" or "Bottle"'
                   />
-                  <Label>Price Per Bottle</Label>
+                  <Label className="labelSmall">Price Per Bottle</Label>
                   <Input
                     onChange={handleInputChange}
                     name="PPB"
                     placeholder="Price Per Bottle"
                   />
-                  <Label>Price Per Glass</Label>
+                  <Label className="labelSmall">Price Per Glass</Label>
                   <Input
                     onChange={handleInputChange}
                     name="PPG"
                     placeholder="if not available by the glass, leave blank"
                   />
-                  <Label>Tasting Notes</Label>
+                  <Label className="labelSmall">Tasting Notes</Label>
                   <Input
                     onChange={handleInputChange}
                     name="details"
@@ -223,7 +223,7 @@ export default function AddWine() {
                             onClick={()=> deleteWine(wine._id)}
                             type="submit"
                           >
-                              Delete
+                              delete
                           </button>
                         </Col>
                         <Col lg={2}>
