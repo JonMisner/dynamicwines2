@@ -54,8 +54,8 @@ export default function AddWine() {
       API.saveWine({
         wine_name: formObject.wine_name,
         year: formObject.year,
-        color: formObject.color,
         carbonation: formObject.carbonation,
+        color: formObject.color,
         grape: formObject.grape,
         grape_detail: formObject.grape_detail,
         full_name: formObject.full_name,
@@ -172,8 +172,8 @@ export default function AddWine() {
                   <Label>Address</Label>
                   <Input
                     onChange={handleInputChange}
-                    name="address"
-                    placeholder="Address of Winery or Vineyard"
+                    name= "address"
+                    placeholder="Full Address of Winery or Vineyard"
                   />
                   <Label>Glass Pour?</Label>
                   <Input
