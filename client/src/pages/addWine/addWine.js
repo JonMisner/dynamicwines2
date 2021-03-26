@@ -184,7 +184,7 @@ export default function AddWine() {
                     name="PPG"
                     placeholder="if not available by the glass, leave blank"
                   />
-                  <Label className="labelSmall">Tasting Notes</Label>
+                  <Label className="iAmSpecial">Tasting Notes</Label>
                   <Input
                     onChange={handleInputChange}
                     name="details"
@@ -232,6 +232,9 @@ export default function AddWine() {
                           </Info>
                           
                         </Col>                        
+                      </Row>
+                      <Row>
+                        
                       </Row>
                     </ListItem>
                   ))}
